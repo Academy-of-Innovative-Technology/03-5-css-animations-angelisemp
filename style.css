@@ -1,0 +1,22 @@
+@keyframes cloud {
+  from {
+    transform: translateX(0);
+  }  
+
+  50% {
+    transform: scale(2) translateX(300px);
+  }
+
+  to {
+   transform: translateX(1000px); 
+  }
+}
+
+main {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(174, 45, 255);
+    animation: cloud;
+    animation-duration: 5s;
+    animation-iteration-count: infinite; 
+}
