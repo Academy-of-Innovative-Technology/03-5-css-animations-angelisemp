@@ -14,15 +14,29 @@
 
 @keyframes heart {
   from {
-    transform: translateX(0);
+    transform: translateX(1);
   }  
 
-  50% {
-    transform: scale(2) translateX(300px);
+  75% {
+    transform: scale(1) translateX(300px);
   }
 
   to {
    transform: translateX(1000px); 
+  }
+}
+
+@keyframes bunny {
+  from {
+    transform: translateX(1);
+  }  
+
+  75% {
+    transform: scale(1) translateX(300px);
+  }
+
+  to {
+   transform: translateX(150px); 
   }
 }
 
@@ -41,5 +55,14 @@ main {
     background-color: rgb(45, 62, 255);
     animation: heart;
     animation-duration: 5s;
+    animation-iteration-count: infinite; 
+}
+
+.cute {
+    width: 120px;
+    height: 125px;
+    background-color: rgb(190, 255, 249);
+    animation: bunny;
+    animation-duration: 6s;
     animation-iteration-count: infinite; 
 }
